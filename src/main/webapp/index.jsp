@@ -46,7 +46,7 @@ button:hover, a:hover {
 <h2 style="text-align:center">User Profile Card</h2>
 
 <div class="card">
-  <img src="./edit.jpg" alt="John" style="width:100%">
+  <img src="./Darshan..jpg" alt="John" style="width:100%">
   <h1>Darshan Shivaram</h1>
   <p class="title">Devops Profile</p>
   <p>Beginner</p>
