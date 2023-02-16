@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: {{ .Release.Name }}
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels: 
+      app: {{ .Values.selector_matchlabels }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      name: {{ .Values.deployment_name }}
+      labels:
+        app: {{ .Values.selector_matchlabels }}
+    spec:
+      containers:
+      - name: {{ .Values.deployment_name }}
+        image: {{ .Values.registry_name }}/{{ .Values.docker_repo_name }}:{{ .Values.image_tag }}
