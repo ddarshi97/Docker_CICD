@@ -22,7 +22,7 @@ pipeline {
         stage( 'my deploy' ) {
         agent {label 'deploy'} 
             steps {
-               sh 'helm repo add helm https://ddarshi9999.jfrog.io/artifactory/api/helm/helm --username darshan@tamron.in --password Demohelm9999'
+               sh 'helm repo add helm https://ddarshi9999.jfrog.io/artifactory/api/helm/helm --username darshan@tamron.in --password Demohelm@9999'
                sh 'helm repo update'
                sh 'helm repo list'
                sh 'helm upgrade --install mytomcat helm/tomcat --version=${BUILD_NUMBER} --set selector_matchlabels=tomcat --set deployment_name=tomcat --set replicas=2 --set registry_name=ddarshi97 --set docker_repo_name=tomcat --set image_tag=${BUILD_NUMBER} --set port_name=tomcat --set target_port=8080 --set port=8080'
