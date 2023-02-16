@@ -4,7 +4,7 @@ pipeline {
         stage('my Build') {
             steps {
                 sh 'docker build -t tomcat_build:${BUILD_NUMBER} .'
-                sh 'helm package ./helm/pack_tomcat --version=${BUILD_NUMBER}'
+                sh 'helm package ./helm/tomcat --version=${BUILD_NUMBER}'
             }
         }  
         stage('publish stage') {
