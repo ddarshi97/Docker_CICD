@@ -49,7 +49,7 @@ button:hover, a:hover {
   <img src="./Darshan..jpg" alt="John" style="width:100%">
   <h1>Darshan Shivaram</h1>
   <p class="title">Devops Profile</p>
-  <p>Beginner</p>
+  <p>Intermediate</p>
   <div style="margin: 24px 0;">
     <a href="#"><i class="fa fa-dribbble"></i></a> 
     <a href="#"><i class="fa fa-twitter"></i></a>  
