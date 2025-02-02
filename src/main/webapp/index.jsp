@@ -48,7 +48,7 @@ button:hover, a:hover {
 <div class="card">
   <img src="./Darshan..jpg" alt="John" style="width:100%">
   <h1>Darshan Shivaram</h1>
-  <p class="title">Devops Profile</p>
+  <p class="title">Senior Devops Engineer</p>
   <p>Intermediate</p>
   <div style="margin: 24px 0;">
     <a href="#"><i class="fa fa-dribbble"></i></a> 
